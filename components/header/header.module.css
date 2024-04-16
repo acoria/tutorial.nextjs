@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: #ddd8e4;
+}
+
+.header > img {
+  /* width: 5rem; */
+}
+
+.header > h1 {
+  margin: 0;
+  margin-left: 1.5rem;
+  color: black;
+  align-self: center;
+}
