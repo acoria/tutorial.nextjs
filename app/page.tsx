@@ -24,6 +24,7 @@ export default function Home() {
         <Link href={"/notExist"}>A none-existing route</Link>
         <Link href={"/nestedRoute/nested"}>Nested route</Link>
         <Link href={"/dynamicRoute/dynamic-1"}>Dynamic route</Link>
+        <Link href={"/loadingPage"}>Loading page</Link>
       </div>
       <SomeComponent />
     </main>
