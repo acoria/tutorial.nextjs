@@ -15,16 +15,25 @@ import SomeComponent from "@/components/someComponent/SomeComponent";
 export default function Home() {
   return (
     <main>
-      <h1>Welcome to the main page!</h1>
-      {/* Anchor tag triggers a full page reload (as seen by the x for the reload button in the browser during clicking the link) -> Use Link instead */}
-      {/* <a href={"/anotherPage"}>Another Page</a> */}
-      <div className={styles.links}>
-        <Link href={"/anotherPage"}>Another Page</Link>
-        <Link href={"/pageThrowingError"}>A page throwing an error</Link>
-        <Link href={"/notExist"}>A none-existing route</Link>
-        <Link href={"/nestedRoute/nested"}>Nested route</Link>
-        <Link href={"/dynamicRoute/dynamic-1"}>Dynamic route</Link>
-        <Link href={"/loadingPage"}>Loading page</Link>
+      <div className={styles.linkBlocks}>
+        <div className={styles.linkList}>
+          <h1>Routes</h1>
+          {/* Anchor tag triggers a full page reload (as seen by the x for the reload button in the browser during clicking the link) -> Use Link instead */}
+          {/* <a href={"/anotherPage"}>Another Page</a> */}
+          <Link href={"/anotherPage"}>Another Page</Link>
+          <Link href={"/nestedRoute/nested"}>Nested route</Link>
+          <Link href={"/dynamicRoute/dynamic-1"}>Dynamic route</Link>
+        </div>
+        <div className={styles.linkList}>
+          <h1>Errors</h1>
+          <Link href={"/pageThrowingError"}>A page throwing an error</Link>
+          <Link href={"/notExist"}>A none-existing route</Link>
+        </div>
+        <div className={styles.linkList}>
+          <h1>Loading</h1>
+          <Link href={"/loadingPage"}>Loading page</Link>
+          <Link href={"/partiallyLoadingPage"}>Partially loading page</Link>
+        </div>
       </div>
       <SomeComponent />
     </main>

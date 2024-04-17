@@ -1,5 +1,9 @@
-import styles from "./loading.module.css";
+import { LoadingComponent } from "@/components/loadingComponent/LoadingComponent";
 
 export default function LoadingPage() {
-  return <main className={styles.loading}>Loading...</main>;
+  return (
+    <main>
+      <LoadingComponent />
+    </main>
+  );
 }
