@@ -17,13 +17,14 @@ export default function Home() {
     <main>
       <h1>Welcome to the main page!</h1>
       {/* Anchor tag triggers a full page reload (as seen by the x for the reload button in the browser during clicking the link) -> Use Link instead */}
-      {/* <a href={"/anotherPage"}>Another Page</a> */}
+      {/* <a href={"/01_anotherPage"}>Another Page</a> */}
       <div className={styles.links}>
-        <Link href={"/anotherPage"}>Another Page</Link>
+        <Link href={"/01_anotherPage"}>Another Page</Link>
+        <Link href={"/02_nestedRoute/nested"}>Nested route</Link>
+        <Link href={"/dynamicRoute/dynamic-1"}>Dynamic route</Link>
         <Link href={"/pageThrowingError"}>A page throwing an error</Link>
         <Link href={"/notExist"}>A none-existing route</Link>
-        <Link href={"/nestedRoute/nested"}>Nested route</Link>
-        <Link href={"/dynamicRoute/dynamic-1"}>Dynamic route</Link>
+        <Link href={"/moreSpecificNotFoundError/notExist"}>A more specific route not-found error</Link>
       </div>
       <SomeComponent />
     </main>
