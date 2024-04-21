@@ -4,8 +4,13 @@
   background-color: #ddd8e4;
 }
 
+/* Not necessary since the <Image> tag handles sizing automatically. But it can be done anyway. */
 .header > img {
   /* width: 5rem; */
+}
+
+.header > a {
+  text-decoration: none;
 }
 
 .header > h1 {
