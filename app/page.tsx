@@ -22,20 +22,30 @@ export default function Home() {
           <h1>Routes</h1>
           <Link href={"/01_anotherPage"}>01 Another Page</Link>
           <Link href={"/02_nestedRoute/nested"}>02 Nested route</Link>
-          <Link href={"/dynamicRoute/dynamic-1"}>03 Dynamic route</Link>
+          <Link href={"/03_dynamicRoute/dynamic-1"}>03 Dynamic route</Link>
         </div>
         <div className={styles.linkList}>
           <h1>Errors</h1>
-          <Link href={"/pageThrowingError"}>10 A page throwing an error</Link>
-          <Link href={"/notExist"}>11 A none-existing route</Link>
-          <Link href={"/moreSpecificNotFoundError/notExist"}>
-            12 A more specific route not-found error
+          <Link href={"/10_pageThrowingError"}>
+            10 A page throwing an error
+          </Link>
+          <Link href={"/11_notExist"}>
+            11 A none-existing route (showing not-found.tsx)
+          </Link>
+          <Link href={"/12_selfTriggerNotFound"}>
+            12 Self-trigger not-found.tsx{" "}
+          </Link>
+          <Link href={"/13_moreSpecificNotFoundError"}>
+            13 Show a more specific not-found.tsx
           </Link>
         </div>
         <div className={styles.linkList}>
           <h1>Loading</h1>
-          <Link href={"/loadingPage"}>20 Loading page</Link>
-          <Link href={"/partiallyLoadingPage"}> 21 Partially loading page</Link>
+          <Link href={"/20_loadingPage"}>20 Loading page</Link>
+          <Link href={"/21_partiallyLoadingPage"}>
+            {" "}
+            21 Partially loading page
+          </Link>
         </div>
       </div>
       <SomeComponent />
