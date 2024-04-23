@@ -17,7 +17,7 @@ Add a file named icon.png to your app folder. It is automatically interpreted as
   Use "fill" property on it if you do not know the size of it (because it is loaded later for example)
 
 #Best practices
-Add a components folder on root level
+Add a "components" folder on root level and only keep the routes in the "app" folder
 
 
 ###To add

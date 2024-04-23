@@ -20,31 +20,31 @@ export default function Home() {
       <div className={styles.linkBlocks}>
         <div className={styles.linkList}>
           <h1>Routes</h1>
-          <Link href={"/01_anotherPage"}>01 Another Page</Link>
-          <Link href={"/02_nestedRoute/nested"}>02 Nested route</Link>
-          <Link href={"/03_dynamicRoute/dynamic-1"}>03 Dynamic route</Link>
+          <Link href={"/01_routes/01_anotherPage"}>01 Another Page</Link>
+          <Link href={"/01_routes/02_nestedRoute/nested"}>02 Nested route</Link>
+          <Link href={"/01_routes/03_dynamicRoute/dynamic-1"}>03 Dynamic route</Link>
         </div>
         <div className={styles.linkList}>
           <h1>Errors</h1>
-          <Link href={"/10_pageThrowingError"}>
-            10 A page throwing an error
+          <Link href={"/02_errorHandling/01_pageThrowingError"}>
+            01 A page throwing an error
           </Link>
-          <Link href={"/11_notExist"}>
-            11 A none-existing route (showing not-found.tsx)
+          <Link href={"/02_errorHandling/notExist"}>
+            A none-existing route (showing not-found.tsx)
           </Link>
-          <Link href={"/12_selfTriggerNotFound"}>
-            12 Self-trigger not-found.tsx{" "}
+          <Link href={"/02_errorHandling/02_selfTriggerNotFound"}>
+            02 Self-trigger not-found.tsx{" "}
           </Link>
-          <Link href={"/13_moreSpecificNotFoundError"}>
-            13 Show a more specific not-found.tsx
+          <Link href={"/02_errorHandling/03_moreSpecificNotFoundError"}>
+            03 Show a more specific not-found.tsx
           </Link>
         </div>
         <div className={styles.linkList}>
           <h1>Loading</h1>
-          <Link href={"/20_loadingPage"}>20 Loading page</Link>
-          <Link href={"/21_partiallyLoadingPage"}>
+          <Link href={"/03_loading/01_loadingPage"}>01 Loading page</Link>
+          <Link href={"/03_loading/02_partiallyLoadingPage"}>
             {" "}
-            21 Partially loading page
+            02 Partially loading page
           </Link>
         </div>
       </div>

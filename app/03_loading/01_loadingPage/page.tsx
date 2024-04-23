@@ -1,4 +1,4 @@
-import { getData } from "../../components/datasource/datasource";
+import { getData } from "../../../components/datasource/datasource";
 
 /*
     While data is being fetched, the loading.tsx page is displayed. It uses the <Suspense> component under the hood.
