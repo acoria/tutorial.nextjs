@@ -40,13 +40,6 @@ Add a "components" folder on root level and only keep the routes in the "app" fo
 	- useFormState (see above)
 	- useFormStatus: a hook to e.g. get the state of a form submission/pending
 	
-
-- metaData:
-	- static metadata by adding "metaData" constant
-	- dynamic metadata by adding function generateMetaData, which receives all parameters that a page receives too
-		-> ensure to check for not-found-errors as well here since the metadata is loaded before the content
-			which will cause an error page to be displayed first
-
 - "use client" vs. "use server"
 
 - use AWS

@@ -12,7 +12,7 @@ export default function Header() {
             - are lazy loaded per default. Since this is a header logo and will always be visible, lazy loading does not make sense. Hence the priority can be set. */}
       <Image src={Logo} alt="A tree" priority />
       <Link href={"/"}>
-        <h1>Next.js Tutorial</h1>
+        <h1 className={styles.title}>Next.js Tutorial</h1>
       </Link>
     </div>
   );
