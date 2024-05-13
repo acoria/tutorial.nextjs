@@ -21,13 +21,6 @@ Add a "components" folder on root level and only keep the routes in the "app" fo
 
 
 ###To add
-- caching: 
-	- test your app in production! -> there is some more aggressive caching going on and you might miss "revalidatePath"
-	- revalidatePath( ) takes the paths to revalidate
-		e.g. "/meals" -> default is revalidatePath("/meals", "page") and will only revalidate the single page
-		revalidatePath("/meals", "layout") can be set to reload all siblings as well
-		revalidatePath("/*", "layout")? can be used to reload the entire application
-
 - server action functions:
 	- async? functions that can be either used in server components or files annotated with "use server"
 	- actions that can be as the action property on a form

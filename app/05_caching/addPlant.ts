@@ -14,8 +14,12 @@ export async function addPlantByName(name: string) {
 }
 
 /**
- * Calling "revalidatePath" will trigger a reload of the page.
- * The default is the page/route that you hand over.
+ * revalidatePath:
+ *  - takes the path to revalidate e.g. "/05_caching"
+ *  - additionally takes the depth
+ *      - default: "page" -> revalidatePath("/05_caching", "page") only reloads this one page
+ *      - other option: "layout" -> additionally reloads all siblings
+ *      - revalidatePath("/", "layout") -> reloads the entire app
  */
 export async function addPlantByNameAndReload(name: string) {
   await PlantStore.addPlantByName(name);
