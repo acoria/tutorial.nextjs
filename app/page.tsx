@@ -19,41 +19,54 @@ export default function Home() {
     <main>
       {/* Anchor tag triggers a full page reload (as seen by the x for the reload button in the browser during clicking the link) -> Use Link instead */}
       {/* <a href={"/01_anotherPage"}>Another Page</a> */}
-      <div className={styles.linkBlocks}>
-        <LinkList title="01 Routes">
-          <Link href={"/01_routes/01_anotherPage"}>01 Another Page</Link>
-          <Link href={"/01_routes/02_nestedRoute/nested"}>02 Nested route</Link>
-          <Link href={"/01_routes/03_dynamicRoute/dynamic-1"}>
-            03 Dynamic route
-          </Link>
-        </LinkList>
-        <LinkList title="02 Errors">
-          <Link href={"/02_errorHandling/01_pageThrowingError"}>
-            01 A page throwing an error
-          </Link>
-          <Link href={"/02_errorHandling/notExist"}>
-            A none-existing route (showing not-found.tsx)
-          </Link>
-          <Link href={"/02_errorHandling/02_selfTriggerNotFound"}>
-            02 Self-trigger not-found.tsx{" "}
-          </Link>
-          <Link href={"/02_errorHandling/03_moreSpecificNotFoundError"}>
-            03 Show a more specific not-found.tsx
-          </Link>
-        </LinkList>
-        <LinkList title="03 Loading">
-          <Link href={"/03_loading/01_loadingPage"}>01 Loading page</Link>
-          <Link href={"/03_loading/02_partiallyLoadingPage"}>
-            02 Partially loading page
-          </Link>
-        </LinkList>
-        <LinkList title="04 Metadata">
-          <Link href={"/04_metadata/01_static"}>01 static</Link>
-          <Link href={"/04_metadata/02_dynamic/dynamicTitle"}>02 dynamic</Link>
-        </LinkList>
-        <LinkList title="05 Caching">
-          <Link href={"/05_caching"}>Caching</Link>
-        </LinkList>
+      <div className={styles.linkBlockRow}>
+        <div className={styles.linkBlocks}>
+          <LinkList title="01 Routes">
+            <Link href={"/01_routes/01_anotherPage"}>01 Another Page</Link>
+            <Link href={"/01_routes/02_nestedRoute/nested"}>
+              02 Nested route
+            </Link>
+            <Link href={"/01_routes/03_dynamicRoute/dynamic-1"}>
+              03 Dynamic route
+            </Link>
+          </LinkList>
+          <LinkList title="02 Errors">
+            <Link href={"/02_errorHandling/01_pageThrowingError"}>
+              01 A page throwing an error
+            </Link>
+            <Link href={"/02_errorHandling/notExist"}>
+              A none-existing route (showing not-found.tsx)
+            </Link>
+            <Link href={"/02_errorHandling/02_selfTriggerNotFound"}>
+              02 Self-trigger not-found.tsx{" "}
+            </Link>
+            <Link href={"/02_errorHandling/03_moreSpecificNotFoundError"}>
+              03 Show a more specific not-found.tsx
+            </Link>
+          </LinkList>
+          <LinkList title="03 Loading">
+            <Link href={"/03_loading/01_loadingPage"}>01 Loading page</Link>
+            <Link href={"/03_loading/02_partiallyLoadingPage"}>
+              02 Partially loading page
+            </Link>
+          </LinkList>
+          <LinkList title="04 Metadata">
+            <Link href={"/04_metadata/01_static"}>01 static</Link>
+            <Link href={"/04_metadata/02_dynamic/dynamicTitle"}>
+              02 dynamic
+            </Link>
+          </LinkList>
+          <LinkList title="05 Caching">
+            <Link href={"/05_caching"}>Caching</Link>
+          </LinkList>
+        </div>
+        <div className={styles.linkBlockRow}>
+          <div className={styles.linkBlocks}>
+            <LinkList title="06 Forms">
+              <Link href={"/06_forms"}>Forms</Link>
+            </LinkList>
+          </div>
+        </div>
       </div>
       <SomeComponent />
     </main>

@@ -7,7 +7,7 @@ const db = sql("plants.db");
 
 const dummyPlants = [{ name: "Palm tree" }, { name: "Sunflower" }];
 
-// db.prepare(`DROP TABLE plants`).run();
+db.prepare(`DROP TABLE plants`).run();
 db.prepare(
   `
      CREATE TABLE IF NOT EXISTS plants (

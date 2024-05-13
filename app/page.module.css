@@ -4,3 +4,9 @@
   justify-content: center;
   column-gap: 3rem;
 }
+
+.linkBlockRow{
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
