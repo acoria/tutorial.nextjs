@@ -63,7 +63,15 @@ export default function Home() {
         <div className={styles.linkBlockRow}>
           <div className={styles.linkBlocks}>
             <LinkList title="06 Forms">
-              <Link href={"/06_forms"}>Forms</Link>
+              <Link href={"/06_forms/01_oldFashionedFormSubmit"}>
+                01 Old-fashioned form submit
+              </Link>
+              <Link href={"/06_forms/02_serverActionFormSubmit"}>
+                02 Server action form submit
+              </Link>
+              <Link href={"/06_forms/03_serverActionWithUX"}>
+                03 Server action with UX
+              </Link>
             </LinkList>
             <LinkList title="07 Redirect">
               <Link href={"/07_redirect"}>Redirect</Link>
