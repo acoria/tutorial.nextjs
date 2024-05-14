@@ -19,7 +19,6 @@ Add a file named icon.png to your app folder. It is automatically interpreted as
 #Best practices
 Add a "components" folder on root level and only keep the routes in the "app" folder
 
-
 ###To add
 - server action functions:
 	- async? functions that can be either used in server components or files annotated with "use server"

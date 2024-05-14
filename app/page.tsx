@@ -65,6 +65,9 @@ export default function Home() {
             <LinkList title="06 Forms">
               <Link href={"/06_forms"}>Forms</Link>
             </LinkList>
+            <LinkList title="07 Redirect">
+              <Link href={"/07_redirect"}>Redirect</Link>
+            </LinkList>
           </div>
         </div>
       </div>
