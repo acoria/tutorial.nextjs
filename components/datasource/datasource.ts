@@ -5,3 +5,11 @@ export const getData = (): Promise<string> => {
     }, 2000);
   });
 };
+
+export const getEmptyName = (): Promise<string> => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("");
+    }, 1000);
+  });
+};

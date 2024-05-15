@@ -20,17 +20,6 @@ Add a file named icon.png to your app folder. It is automatically interpreted as
 Add a "components" folder on root level and only keep the routes in the "app" folder
 
 ###To add
-- server action functions:
-	- async? functions that can be either used in server components or files annotated with "use server"
-	- actions that can be as the action property on a form
-		- directly
-		- or with the use of useFormState
-			(a hook provided by react-dom to handle responses returned by the server action function and potentially update the ui depending on this state 
-			 e.g. showing an validation error message for a form)
-	
-- form handling
-	- useFormState (see above)
-	- useFormStatus: a hook to e.g. get the state of a form submission/pending
 	
 - "use client" vs. "use server"
 

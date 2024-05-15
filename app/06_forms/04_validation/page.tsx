@@ -1,27 +1,27 @@
-import { getData } from "@/components/datasource/datasource";
-import { redirect } from "next/navigation";
-import { useActionState } from "react";
-import { FormSubmitButton } from "../03_serverActionWithUX/FormSubmitButton";
+"use client";
 import { useFormState } from "react-dom";
-import { IData } from "./IData";
+import { FormSubmitButton } from "../03_serverActionWithUX/FormSubmitButton";
+import styles from "./page.module.scss";
+import sendName from "./sendName";
 
+/**
+ * The {@link useFormState} hook handles responses returned by the server action function and potentially updates the ui depending on this state 
+ * e.g. showing an validation error message for a form.
+ * 
+ * The action to call is passed as well as an initial value.
+ * The hook returns:
+ *  - a state (either the initial state or the data returned by the action)
+ *  - the action to call inside of the form instead of the passed one
+ */
 export default function Validation() {
-  const sendName = async (formData: FormData): Promise<IData> => {
-    "use server";
-
-    //a function taking a while to execute
-    const data = await getData();
-
-    const returnedData: IData = { name: data };
-
-    return returnedData
-  };
-
-  useActionState(sendName, {name: "test"});
+  const [state, formAction] = useFormState(sendName, {
+    data: { name: "test" },
+  });
 
   return (
     <main>
-      <form action={sendName}>
+      {state.error && <div className={styles.error}>{state.error}</div>}
+      <form action={formAction}>
         <label htmlFor="nameInputId">Name</label>
         <input id="nameInputId" name="nameInput" />
         <FormSubmitButton />

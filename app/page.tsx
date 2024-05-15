@@ -72,6 +72,9 @@ export default function Home() {
               <Link href={"/06_forms/03_serverActionWithUX"}>
                 03 Server action with UX
               </Link>
+              <Link href={"/06_forms/04_validation"}>
+                04 Validation
+              </Link>
             </LinkList>
             <LinkList title="07 Redirect">
               <Link href={"/07_redirect"}>Redirect</Link>
