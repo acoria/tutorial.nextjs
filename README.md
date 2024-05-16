@@ -2,6 +2,9 @@ This is a tutorial for [Next.js](https://nextjs.org/).
 
 ## Getting Started
 
+Create a next.js project
+`npx create-next-app@latest`
+
 Start the server with
 `npm run dev`
 
@@ -23,4 +26,4 @@ Add a "components" folder on root level and only keep the routes in the "app" fo
 	
 - "use client" vs. "use server"
 
-- use AWS
+- use AWS (lecture 130)
