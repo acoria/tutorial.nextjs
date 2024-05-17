@@ -82,6 +82,9 @@ export default function Home() {
             <LinkList title="08 Redirect">
               <Link href={"/08_redirect"}>Redirect</Link>
             </LinkList>
+            <LinkList title="09 Parallel Routes">
+              <Link href={"/09_parallelRoutes"}>Parallel Routes</Link>
+            </LinkList>
           </div>
         </div>
       </div>
