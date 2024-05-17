@@ -1,6 +1,6 @@
 "use client";
 import { useFormState } from "react-dom";
-import { FormSubmitButton } from "../03_serverActionWithUX/FormSubmitButton";
+import { FormSubmitButton } from "../73_serverActionWithUX/FormSubmitButton";
 import styles from "./page.module.scss";
 import sendName from "./sendName";
 

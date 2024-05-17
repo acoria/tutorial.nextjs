@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "../components/header/header";
+import { IHaveLayout } from "./types/IHaveLayout";
 
 /* The layout file is the wrapper element around the app
    
@@ -14,11 +15,7 @@ export const metadata: Metadata = {
   description: "A tutorial for Next.js",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: IHaveLayout) {
   return (
     <html lang="en">
       <body>

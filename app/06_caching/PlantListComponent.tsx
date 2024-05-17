@@ -3,7 +3,7 @@
 import {
   addPlantByName,
   addPlantByNameAndReload,
-} from "@/app/05_caching/addPlant";
+} from "@/app/06_caching/addPlant";
 import Link from "next/link";
 import { useState } from "react";
 

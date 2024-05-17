@@ -12,6 +12,8 @@ import { LinkList } from "@/components/linkList/LinkList";
  *              page.tsx
  *     Which will call page.tsx when the route is called:
  *     Route: /anotherPage
+ *
+ * The layout file wraps each page into a default layout.
  */
 
 export default function Home() {
@@ -22,62 +24,63 @@ export default function Home() {
       <div className={styles.linkBlockRow}>
         <div className={styles.linkBlocks}>
           <LinkList title="01 Routes">
-            <Link href={"/01_routes/01_anotherPage"}>01 Another Page</Link>
-            <Link href={"/01_routes/02_nestedRoute/nested"}>
-              02 Nested route
+            <Link href={"/01_routes/11_anotherPage"}>11 Another Page</Link>
+            <Link href={"/01_routes/12_nestedRoute/nested"}>
+              12 Nested route
             </Link>
-            <Link href={"/01_routes/03_dynamicRoute/dynamic-1"}>
-              03 Dynamic route
+            <Link href={"/01_routes/13_dynamicRoute/dynamic-1"}>
+              13 Dynamic route
             </Link>
           </LinkList>
-          <LinkList title="02 Errors">
-            <Link href={"/02_errorHandling/01_pageThrowingError"}>
-              01 A page throwing an error
+          <LinkList title="02 Layout">
+            <Link href={"/02_layout/subpageInheritingLayout"}>Layouting</Link>
+          </LinkList>
+          <LinkList title="03 Errors">
+            <Link href={"/03_errorHandling/31_pageThrowingError"}>
+              31 A page throwing an error
             </Link>
-            <Link href={"/02_errorHandling/notExist"}>
+            <Link href={"/03_errorHandling/notExist"}>
               A none-existing route (showing not-found.tsx)
             </Link>
-            <Link href={"/02_errorHandling/02_selfTriggerNotFound"}>
-              02 Self-trigger not-found.tsx{" "}
+            <Link href={"/03_errorHandling/32_selfTriggerNotFound"}>
+              32 Self-trigger not-found.tsx{" "}
             </Link>
-            <Link href={"/02_errorHandling/03_moreSpecificNotFoundError"}>
-              03 Show a more specific not-found.tsx
-            </Link>
-          </LinkList>
-          <LinkList title="03 Loading">
-            <Link href={"/03_loading/01_loadingPage"}>01 Loading page</Link>
-            <Link href={"/03_loading/02_partiallyLoadingPage"}>
-              02 Partially loading page
+            <Link href={"/03_errorHandling/33_moreSpecificNotFoundError"}>
+              33 Show a more specific not-found.tsx
             </Link>
           </LinkList>
-          <LinkList title="04 Metadata">
-            <Link href={"/04_metadata/01_static"}>01 static</Link>
-            <Link href={"/04_metadata/02_dynamic/dynamicTitle"}>
-              02 dynamic
+          <LinkList title="04 Loading">
+            <Link href={"/04_loading/41_loadingPage"}>41 Loading page</Link>
+            <Link href={"/04_loading/42_partiallyLoadingPage"}>
+              42 Partially loading page
             </Link>
           </LinkList>
-          <LinkList title="05 Caching">
-            <Link href={"/05_caching"}>Caching</Link>
+          <LinkList title="05 Metadata">
+            <Link href={"/05_metadata/51_static"}>51 static</Link>
+            <Link href={"/05_metadata/52_dynamic/dynamicTitle"}>
+              52 dynamic
+            </Link>
           </LinkList>
         </div>
         <div className={styles.linkBlockRow}>
           <div className={styles.linkBlocks}>
-            <LinkList title="06 Forms">
-              <Link href={"/06_forms/01_oldFashionedFormSubmit"}>
-                01 Old-fashioned form submit
-              </Link>
-              <Link href={"/06_forms/02_serverActionFormSubmit"}>
-                02 Server action form submit
-              </Link>
-              <Link href={"/06_forms/03_serverActionWithUX"}>
-                03 Server action with UX
-              </Link>
-              <Link href={"/06_forms/04_validation"}>
-                04 Validation
-              </Link>
+            <LinkList title="06 Caching">
+              <Link href={"/06_caching"}>Caching</Link>
             </LinkList>
-            <LinkList title="07 Redirect">
-              <Link href={"/07_redirect"}>Redirect</Link>
+            <LinkList title="07 Forms">
+              <Link href={"/07_forms/71_oldFashionedFormSubmit"}>
+                71 Old-fashioned form submit
+              </Link>
+              <Link href={"/07_forms/72_serverActionFormSubmit"}>
+                72 Server action form submit
+              </Link>
+              <Link href={"/07_forms/73_serverActionWithUX"}>
+                73 Server action with UX
+              </Link>
+              <Link href={"/07_forms/74_validation"}>74 Validation</Link>
+            </LinkList>
+            <LinkList title="08 Redirect">
+              <Link href={"/08_redirect"}>Redirect</Link>
             </LinkList>
           </div>
         </div>
