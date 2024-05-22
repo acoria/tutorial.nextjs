@@ -1,5 +1,5 @@
 import { IHaveName } from "./IHaveName";
 
-export interface IHaveNameParam {
+export interface IHaveNameParams {
   params: IHaveName;
 }

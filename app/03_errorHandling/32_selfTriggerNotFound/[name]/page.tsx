@@ -1,4 +1,4 @@
-import { IHaveNameParam } from "@/components/core/IHaveNameParam";
+import { IHaveNameParams } from "@/components/core/IHaveNameParams";
 import { notFound } from "next/navigation";
 
 const loadDataByName = (name: string): string => "";
@@ -7,7 +7,7 @@ const loadDataByName = (name: string): string => "";
         e.g. if some details for a page cannot be found after loading data
   */
 
-export default function SelfTriggerNotFound({ params }: IHaveNameParam) {
+export default function SelfTriggerNotFound({ params }: IHaveNameParams) {
   const data = loadDataByName(params.name);
   if (data === "") {
     notFound();

@@ -1,4 +1,4 @@
-import { IHaveSlugParam } from "@/components/core/IHaveSlugParam";
+import { IHaveSlugParams } from "@/components/core/IHaveSlugParams";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -7,7 +7,7 @@ import { notFound } from "next/navigation";
  */
 export async function generateMetadata({
   params,
-}: IHaveSlugParam): Promise<Metadata> {
+}: IHaveSlugParams): Promise<Metadata> {
   //ensure that you catch any errors here that you are catching inside the component as well,
   //if you have e.g. a specific not-found.tsx since the metadata is called before the actual component and will therefore throw errors earlier.
   // const data = await getSomeData();
@@ -20,7 +20,7 @@ export async function generateMetadata({
   };
 }
 
-export default function Component({ params }: IHaveSlugParam) {
+export default function Component({ params }: IHaveSlugParams) {
   return (
     <>{`Dynamic metadata: You are on page with tab title "${params.slug}"`}</>
   );
