@@ -83,7 +83,13 @@ export default function Home() {
               <Link href={"/08_redirect"}>Redirect</Link>
             </LinkList>
             <LinkList title="09 Parallel Routes">
-              <Link href={"/09_parallelRoutes"}>Parallel Routes</Link>
+              <Link href={"/09_parallelRoutes/91_basics"}>91 Basics</Link>
+              <Link href={"/09_parallelRoutes/92_nestedRoutes"}>
+                92 Nested routes
+              </Link>
+              <Link href={"/09_parallelRoutes/93_catchAllRoutes"}>
+                93 Catch-All routes
+              </Link>
             </LinkList>
           </div>
         </div>

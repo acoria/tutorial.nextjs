@@ -1,5 +1,5 @@
-import { NewsInfo } from "../../services/NewsInfo";
-import { IHaveYearParams } from "../../types/IHaveYearParams";
+import { NewsInfo } from "../../../services/NewsInfo";
+import { IHaveYearParams } from "../../../types/IHaveYearParams";
 
 export default function YearlyNews({ params }: IHaveYearParams) {
   const news = NewsInfo.findNewsByYear(params.year);

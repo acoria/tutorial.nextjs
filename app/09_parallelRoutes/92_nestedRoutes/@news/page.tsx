@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { NewsInfo } from "../services/NewsInfo";
+import { NewsInfo } from "../../services/NewsInfo";
 
 export default function News() {
   return (
