@@ -33,12 +33,21 @@ export default function News(nestedParams: IHaveNestedParams) {
     const month = params.slugs?.[1];
     //check which content to show, depending on the depth of the routing
     if (month !== undefined) {
+      //also check for invalid routes
+      checkIsValidPathParam(month);
       return <div>{`News of year ${year} and month ${month}`}</div>;
     } else if (year !== undefined) {
+      checkIsValidPathParam(year);
       return <div>{`News of year ${year}`}</div>;
     } else {
       //The slug is empty for the main page
       return <>No news selected</>;
+    }
+  };
+
+  const checkIsValidPathParam = (pathParam: string) => {
+    if (isNaN(+pathParam)) {
+      throw Error(`Invalid path parameter '${pathParam}'`);
     }
   };
 

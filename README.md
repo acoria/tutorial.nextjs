@@ -20,10 +20,9 @@ Add a file named icon.png to your app folder. It is automatically interpreted as
   Use "fill" property on it if you do not know the size of it (because it is loaded later for example)
 
 #Best practices
-Add a "components" folder on root level and only keep the routes in the "app" folder
+- Add a "components" folder on root level and only keep the routes in the "app" folder
+- Keep the client components as small as possible. Only outsource what needs e.g. a hook, user event. So a single button, 
 
 ###To add
-	
-- "use client" vs. "use server"
 
 - use AWS (lecture 130)

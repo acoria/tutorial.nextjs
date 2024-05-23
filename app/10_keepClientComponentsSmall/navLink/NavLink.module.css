@@ -1,0 +1,9 @@
+.link {
+  padding: 0.5rem 1rem;
+}
+
+.active {
+  background-color: white;
+  opacity: 0.5;
+  color: black;
+}

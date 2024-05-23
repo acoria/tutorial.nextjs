@@ -91,6 +91,9 @@ export default function Home() {
                 93 Catch-All routes
               </Link>
             </LinkList>
+            <LinkList title="10 Keep client components small">
+              <Link href={"/10_keepClientComponentsSmall"}>NavLink</Link>
+            </LinkList>
           </div>
         </div>
       </div>

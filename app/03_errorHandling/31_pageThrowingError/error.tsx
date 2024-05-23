@@ -5,7 +5,9 @@
 */
 "use client";
 
-export default function Error({ error }: { error: Error }) {
+import { IHaveError } from "@/app/types/IHaveError";
+
+export default function Error({ error }: IHaveError) {
   return (
     <main>
       <div>Oh no...An unexpected error occurred!</div>
