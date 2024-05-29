@@ -97,6 +97,10 @@ export default function Home() {
             <LinkList title="10 Keep client components small">
               <Link href={"/10_keepClientComponentsSmall"}>NavLink</Link>
             </LinkList>
+            <LinkList title="11 Navigate programmatically">
+              <Link href={"/11_navigateProgrammatically"}>Navigate programmatically</Link>
+            </LinkList>
+        
           </div>
         </div>
       </div>
