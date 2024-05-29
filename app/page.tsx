@@ -90,6 +90,9 @@ export default function Home() {
               <Link href={"/09_parallelRoutes/93_catchAllRoutes"}>
                 93 Catch-All routes
               </Link>
+              <Link href={"/09_parallelRoutes/94_interceptionRoutes"}>
+                94 Interception Routes
+              </Link>
             </LinkList>
             <LinkList title="10 Keep client components small">
               <Link href={"/10_keepClientComponentsSmall"}>NavLink</Link>
