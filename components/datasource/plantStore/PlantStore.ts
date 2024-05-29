@@ -16,5 +16,14 @@ class PlantStoreDefault {
       resolve(this.db.prepare(`SELECT * FROM plants`).all());
     });
   }
+
+  async findById(id: number): Promise<IPlant> {
+    return new Promise((resolve) => {
+      const plants = this.db
+        .prepare(`SELECT * FROM plants where id = ${id}`)
+        .all();
+      resolve(plants[0]);
+    });
+  }
 }
 export const PlantStore = new PlantStoreDefault();

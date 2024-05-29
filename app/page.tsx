@@ -91,16 +91,29 @@ export default function Home() {
                 93 Catch-All routes
               </Link>
               <Link href={"/09_parallelRoutes/94_interceptionRoutes"}>
-                94 Interception Routes
+                94 Interception routes
+              </Link>
+              <Link href={"/09_parallelRoutes/95_interceptWithModal"}>
+                95 Intercept with modal
               </Link>
             </LinkList>
             <LinkList title="10 Keep client components small">
               <Link href={"/10_keepClientComponentsSmall"}>NavLink</Link>
             </LinkList>
+          </div>
+        </div>
+        <div className={styles.linkBlockRow}>
+          <div className={styles.linkBlocks}>
             <LinkList title="11 Navigate programmatically">
-              <Link href={"/11_navigateProgrammatically"}>Navigate programmatically</Link>
+              <Link href={"/11_navigateProgrammatically"}>
+                Navigate programmatically
+              </Link>
             </LinkList>
-        
+            <LinkList title="12 Route Groups">
+              <Link href={"/12_routeGroups"}>
+                Route Groups
+              </Link>
+            </LinkList>
           </div>
         </div>
       </div>

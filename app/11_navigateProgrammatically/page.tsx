@@ -9,6 +9,8 @@ import { useRouter } from "next/navigation";
  *  push a new page onto the stack
  *  replace a current item on the stack
  *  refresh the page
+ * 
+ *  Attention: import from next/navigation! 
  */
 
 export default function NavigateProgrammatically() {
