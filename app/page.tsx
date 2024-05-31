@@ -110,8 +110,16 @@ export default function Home() {
               </Link>
             </LinkList>
             <LinkList title="12 Route Groups">
-              <Link href={"/12_routeGroups"}>
-                Route Groups
+              <Link href={"/12_routeGroups"}>Route Groups</Link>
+            </LinkList>
+            <LinkList title="13 Route handlers">
+              <Link href={"/13_routeHandlers"}>
+                Route handler/API/REST endpoints
+              </Link>
+            </LinkList>
+            <LinkList title="14 Middleware">
+              <Link href={"/14_middleware"}>
+                Middleware (intercept a request)
               </Link>
             </LinkList>
           </div>
