@@ -10,30 +10,30 @@ import { redirect } from "next/navigation";
  */
 export async function addPlantByName(name: string) {
   await PlantStore.addPlantByName(name);
-  redirect("/05_caching/plantList");
+  redirect("/06_caching/plantList");
 }
 
 /**
  * revalidatePath:
- *  - takes the path to revalidate e.g. "/05_caching"
+ *  - takes the path to revalidate e.g. "/06_caching"
  *  - additionally takes the depth
- *      - default: "page" -> revalidatePath("/05_caching", "page") only reloads this one page
+ *      - default: "page" -> revalidatePath("/06_caching", "page") only reloads this one page
  *      - other option: "layout" -> additionally reloads all siblings
  *      - revalidatePath("/", "layout") -> reloads the entire app
  */
 export async function addPlantByNameAndReload(name: string) {
   await PlantStore.addPlantByName(name);
   //this would not be enough, since the default is to only reload one page
-  // revalidatePath("/05_caching");
+  // revalidatePath("/06_caching");
   //default:
-  // revalidatePath("/05_caching", "page");
+  // revalidatePath("/06_caching", "page");
 
   //You can either refresh the correct page directly
-  // revalidatePath("/05_caching/plantList");
+  // revalidatePath("/06_caching/plantList");
   //Or refresh with "layout" -> this will reload the page and all subsequent pages
-  revalidatePath("/05_caching", "layout");
+  revalidatePath("/06_caching", "layout");
 
   //You can refresh the entire application like this:
   // revalidatePath("/", "layout");
-  redirect("/05_caching/plantList");
+  redirect("/06_caching/plantList");
 }

@@ -16,7 +16,7 @@ export default async function PlantList() {
           {plant.name}
         </h2>
       ))}
-      <Link href="/05_caching">Go back</Link>
+      <Link href="/06_caching">Go back</Link>
     </div>
   );
 }

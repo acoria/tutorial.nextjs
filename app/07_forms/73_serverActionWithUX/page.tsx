@@ -17,7 +17,7 @@ export default function ServerActionWithUX() {
     //a function taking a while to execute
     await getData();
 
-    redirect("/06_forms/submittedForm");
+    redirect("/07_forms/submittedForm");
   };
 
   return (

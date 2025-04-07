@@ -40,7 +40,7 @@ export const PlantListComponent: React.FC = () => {
       <h2>Add a new plant or navigate</h2>
       <button onClick={addWithoutReload}>Add without reload (default)</button>
       <button onClick={addWithReload}>Add with reload</button>
-      <Link href={"/05_caching/plantList"}>Go to plant list</Link>
+      <Link href={"/06_caching/plantList"}>Go to plant list</Link>
     </div>
   );
 };

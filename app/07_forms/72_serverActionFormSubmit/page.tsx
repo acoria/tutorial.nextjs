@@ -12,7 +12,7 @@ export default function ServerActionFormSubmit() {
     console.log(name);
 
     //you can choose to navigate somewhere afterwards
-    redirect("/06_forms/submittedForm");
+    redirect("/07_forms/submittedForm");
   };
 
   return (
